@@ -105,16 +105,10 @@ header {
   color: #fff;
 }
 
-.slider-img {
-  width: auto;
-  height: 80vh;
-}
-
-.slider-img img {
-  height: 100%;
+#slider {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 80vh;
+  /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 
 .news {

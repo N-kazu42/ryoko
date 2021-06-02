@@ -311,11 +311,12 @@ header {
 }
 
 .contact {
-  padding: 0.8rem 1.5rem;
+  padding: 1rem;
 }
 
 .contact a {
   color: #fff;
+  margin: 0 auto;
 }
 
 #slider {

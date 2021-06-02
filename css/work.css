@@ -436,8 +436,14 @@ header {
 }
 
 .news-title {
-  font-size: 2rem;
   text-align: center;
+}
+
+.news-title h2 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid #0f4086;
 }
 
 .news-list {
@@ -537,8 +543,15 @@ header {
 }
 
 .work-title {
-  font-size: 2rem;
   text-align: center;
+  padding-bottom: 2rem;
+}
+
+.work-title h2 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid #0f4086;
 }
 
 .work-wrap .work-contents {
@@ -693,11 +706,14 @@ footer .copyright {
   }
 }
 
+#work-img {
+  background: url(../images/slide-image1.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .main-img {
   height: 40vh;
   width: 100%;
-  background: url(../images/slide-image1.jpg) no-repeat center;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

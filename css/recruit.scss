@@ -1,0 +1,55 @@
+@import "reset.scss";
+@import "index.scss";
+@import "work.scss";
+//上を最後に消す
+#recruit-img{
+    background: url(../images/slide-image2.jpg) no-repeat center;
+    background-size: cover;
+
+}
+.recruit-body{
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .tab{
+        font-size: 1.5rem;
+    }
+    .recruit-list{
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $main-color;
+            padding: 1rem 0;
+        }
+        th{
+            background-color:$main-color;
+            padding: 1rem;
+            color: #fff;
+            font-weight: 400;
+            border-bottom: solid 1px #fff;
+            vertical-align: middle;
+        }
+        td{
+            padding: 1rem;
+            line-height: 1.2;
+        }
+        p{
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    }
+    
+}
+.recruitment{
+    &>div{
+        padding: 2rem;
+        margin: 2rem;
+        a{
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+    
+}

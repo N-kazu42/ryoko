@@ -281,8 +281,14 @@ header{
 .news {
   color: $main-color;
   &-title {
-    font-size: 2rem;
+   
     text-align: center;
+    h2{
+      display:inline-block;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid $main-color;
+    }
   }
   &-list {
     display: flex;
@@ -361,8 +367,15 @@ header{
 }
 
 .work-title{
+  text-align: center;
+  padding-bottom: 2rem;
+  h2{
+
+    display:inline-block;
     font-size: 2rem;
-    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: solid $main-color;
+  }
 }
 .work-wrap{
     

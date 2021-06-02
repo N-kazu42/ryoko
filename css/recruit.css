@@ -1508,4 +1508,59 @@ footer .copyright {
   font-size: 1.1rem;
   padding-bottom: 0rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+#recruit-img {
+  background: url(../images/slide-image2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.recruit-body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recruit-body .tab {
+  font-size: 1.5rem;
+}
+
+.recruit-body .recruit-list h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0f4086;
+  padding: 1rem 0;
+}
+
+.recruit-body .recruit-list th {
+  background-color: #0f4086;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 400;
+  border-bottom: solid 1px #fff;
+  vertical-align: middle;
+}
+
+.recruit-body .recruit-list td {
+  padding: 1rem;
+  line-height: 1.2;
+}
+
+.recruit-body .recruit-list p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.recruitment > div {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.recruitment > div a {
+  color: #fff;
+  font-weight: 400;
+}
+/*# sourceMappingURL=recruit.css.map */

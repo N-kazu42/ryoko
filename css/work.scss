@@ -1,13 +1,17 @@
 @import "reset.scss";
 @import "index.scss";
+//上を最後に消す
+
 
 // @include img-full;
+#work-img{
+    background: url(../images/slide-image1.jpg) no-repeat center;
+    background-size: cover;
 
+}
 .main-img{
     height: 40vh;
     width: 100%;
-    background: url(../images/slide-image1.jpg) no-repeat center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -334,8 +334,14 @@ header {
 }
 
 .news-title {
-  font-size: 2rem;
   text-align: center;
+}
+
+.news-title h2 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid #0f4086;
 }
 
 .news-list {
@@ -435,8 +441,15 @@ header {
 }
 
 .work-title {
-  font-size: 2rem;
   text-align: center;
+  padding-bottom: 2rem;
+}
+
+.work-title h2 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid #0f4086;
 }
 
 .work-wrap .work-contents {

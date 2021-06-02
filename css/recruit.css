@@ -1563,4 +1563,84 @@ footer .copyright {
   color: #fff;
   font-weight: 400;
 }
+
+.interview-title {
+  width: 100%;
+  height: 20vh;
+  background-color: #0f4086;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interview-title h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.interview-body {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.interview-body .even {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-left: 0rem;
+}
+
+.interview-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  margin-left: -2rem;
+}
+
+.interview-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.interview-text {
+  height: 50vh;
+  width: 40vh;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: #0f4086;
+  color: #fff;
+  padding: 3rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=recruit.css.map */

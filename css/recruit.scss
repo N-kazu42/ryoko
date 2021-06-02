@@ -2,54 +2,109 @@
 @import "index.scss";
 @import "work.scss";
 //上を最後に消す
-#recruit-img{
-    background: url(../images/slide-image2.jpg) no-repeat center;
-    background-size: cover;
+#recruit-img {
+  background: url(../images/slide-image2.jpg) no-repeat center;
+  background-size: cover;
+}
+.recruit-body {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .tab {
+    font-size: 1.5rem;
+  }
+  .recruit-list {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $main-color;
+      padding: 1rem 0;
+    }
+    th {
+      background-color: $main-color;
+      padding: 1rem;
+      color: #fff;
+      font-weight: 400;
+      border-bottom: solid 1px #fff;
+      vertical-align: middle;
+    }
+    td {
+      padding: 1rem;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
+  }
+}
+.recruitment {
+  & > div {
+    padding: 2rem;
+    margin: 2rem;
+    a {
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
 
+
+.interview-title {
+  width: 100%;
+  height: 20vh;
+  background-color: $main-color;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+      color: #fff;
+      font-size: 1.5rem;
+    }
 }
-.recruit-body{
-    .container{
-        display: flex;
-        justify-content: center;
+.interview-body{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    .even{
+        
+        order: -1;
+        margin-left: 0rem;
     }
-    .tab{
-        font-size: 1.5rem;
-    }
-    .recruit-list{
-        h3{
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: $main-color;
-            padding: 1rem 0;
-        }
-        th{
-            background-color:$main-color;
-            padding: 1rem;
-            color: #fff;
-            font-weight: 400;
-            border-bottom: solid 1px #fff;
-            vertical-align: middle;
-        }
-        td{
-            padding: 1rem;
-            line-height: 1.2;
-        }
-        p{
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 2rem 0;
-        }
-    }
-    
 }
-.recruitment{
-    &>div{
-        padding: 2rem;
-        margin: 2rem;
-        a{
-            color: #fff;
-            font-weight: 400;
-        }
+.interview {
+
+  &-img {
+    flex-basis: 40%;
+    height: 50vh;
+    width: 50vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    margin-left: -2rem;
+    img {
+      @include img-full;
     }
+  }
+  &-text {
     
+    height: 50vh;
+    width: 40vh;
+    flex-basis: 40%;
+    background-color: $main-color;
+    color: #fff;
+    padding: 3rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
 }

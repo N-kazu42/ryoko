@@ -99,3 +99,12 @@ function scr_ani(scr,offs_max){
     });// end scroll
   
   });
+
+
+//   ハンバーガーメニュー
+
+  $('.burger-btn').on('click',function(){
+    $('.burger-btn').toggleClass('close');
+    $('.nav-wrapper').fadeToggle(500);
+    $('body').toggleClass('noscroll');
+  });

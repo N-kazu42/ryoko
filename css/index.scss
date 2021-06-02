@@ -1,3 +1,4 @@
+// 共通部分
 $main-color: #0f4086;
 @mixin img-full {
   height: 100%;
@@ -11,6 +12,173 @@ a {
 li {
   list-style: none;
 }
+.fadeIn_item{
+  &.offs,
+  .offs &{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  &.ons,
+  .ons &{
+    transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// ハンバーガー
+.burger-btn{
+  display: block;      
+  width: 39px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none;    
+}    
+.bar{      
+  width: 20px;      
+  height: 1px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: #000;    
+}    
+.bar_top{   
+  top: 10px;
+}
+.bar_mid{    
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 10px;
+}
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,10px) rotate(45deg);      
+  transition: transform .3s;    
+}    
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}    
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-8px) rotate(-45deg);      
+transition: transform .3s;    
+}
+.burger-btn{
+  display: none;
+}
+.nav-wrapper{
+  display: block;
+}
+@media screen and (max-width:992px){
+  /* ----------------------- */
+  /* base_sp
+  /* ----------------------- */
+  
+
+  /* ------------------ */
+  /* humberger-menu */
+  /* ------------------ */
+  .header{
+      padding: 0 5%;
+  }
+  .burger-btn{
+      display: block;
+      width: 39px;
+      height: 39px;
+      position: relative;
+      z-index: 3;
+  /*   codepenの挙動のため */
+    background-color:transparent;
+    border:none;
+    }
+    .bar{
+      width: 20px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgb(32, 32, 32);
+    }
+    .bar_top{
+      top: 10px;
+    }
+    .bar_mid{
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .bar_bottom{
+      bottom: 10px;
+    }
+    .burger-btn.close .bar_top{
+      transform: translate(-50%,10px) rotate(45deg);
+      transition: transform .3s;
+    }
+    .burger-btn.close .bar_mid{
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .burger-btn.close .bar_bottom{
+      transform: translate(-50%,-8px) rotate(-45deg);
+      transition: transform .3s;
+    }
+    .nav-wrapper{
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;/*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+     }
+     .header-nav{
+        width: 100%;
+        height: 100%;
+        background-color:#f3f1f1;
+        z-index: 2;
+      }
+     .header-nav .nav-list{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+      .header-nav .nav-item{
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+  
+  /* ------------------ */
+  /* fv */
+  /* ------------------ */
+  .main-copy{
+    font-size: 30px;
+  }
+  
+  /* ------------------ */
+  /* about */
+  /* ------------------ */
+  h3{
+      font-size: 20px;
+      margin-bottom: 30px;
+  }
+  .section-wrapper{
+      padding:100px 5% 50px;  
+  }
+
+
+}  
+  
+body.noscroll{
+  overflow: hidden;
+}
+// ハンバーガー終わり
+
 .btn {
   position: relative;
   display: inline-block;
@@ -61,6 +229,17 @@ section {
     max-width: 1140px;
   }
 }
+.col2{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .col2 {
+    flex-direction: column;
+  }
+}
+
+// 共通部分終わり
 header{
   position: sticky;
   top: 0;
@@ -81,26 +260,18 @@ header{
   li {
     padding: 1rem;
   }
-  .contact {
-    margin-left: 2rem;
-    a {
-      color: #fff;
-    }
+}
+.contact {
+  padding: 0.8rem 1.5rem; 
+  a {
+    color: #fff;
   }
 }
+
 #slider {
   width: 100%;
   height: 80vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
-// .slider-img {
-//   width: auto;
-//   height: 80vh;
-//   position: relative;
-//   img {
-//     @include img-full();
-//     position: absolute;
-//   }
-// }
 
 .news {
   color: $main-color;
@@ -132,6 +303,24 @@ header{
     }
   }
 }
+
+@media (max-width: 992px) {
+  .news {
+    &-list {
+      flex-direction: column;
+      flex-basis: 100%;
+      .news-data {
+        padding-bottom: 0;
+      }
+      .news-item {
+        margin: 2rem;
+        padding: 0.5rem;
+      }
+    }
+    
+  }
+}
+
 .service {
   background: url("../images/main-bg.png") no-repeat center;
 
@@ -154,18 +343,15 @@ header{
     line-height: 2rem;
   }
 }
-.fadeIn_item{
-  &.offs,
-  .offs &{
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  &.ons,
-  .ons &{
-    transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 768px) {
+  .service {
+    &-text {
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
   }
 }
 
@@ -174,8 +360,7 @@ header{
     text-align: center;
 }
 .work-wrap{
-    display: flex;
-    justify-content: center;
+    
     .work-contents{
         display: flex;
         justify-content: center;
@@ -207,6 +392,13 @@ header{
         background: url("../images/img_business04.png") no-repeat ;
         background-size:cover; 
 
+    }
+    @media (max-width: 768px) {
+      .work-contents{
+        
+        width: auto;
+        margin: 1rem 0;
+    }
     }
 }
 
@@ -250,6 +442,8 @@ header{
     z-index: 1;
   }
 }
+
+
 footer{
     background-color: $main-color;
     opacity: 0.8;
@@ -275,3 +469,12 @@ footer{
     }
 }
 
+@media screen and (max-width:992px){
+  footer{
+    height: 30vh;
+    .footer-list{
+        flex-wrap: wrap;
+    }
+
+  }
+}

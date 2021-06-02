@@ -1,0 +1,80 @@
+@import "reset.scss";
+@import "index.scss";
+
+// @include img-full;
+
+.main-img{
+    height: 40vh;
+    width: 100%;
+    background: url(../images/slide-image1.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    h1{
+        width: 80%;
+        font-size: 2rem;
+        text-shadow: 1px 2px 3px #e2e1e1;
+    }
+}
+
+.business{
+    .business-body{
+        padding: 2rem 0;
+    }
+    .business-title{
+        text-align: center;
+        padding: 2rem;
+    }
+    h2{
+        display:inline-block;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: solid $main-color;
+    }
+    .business-img{
+        height: 50vh;
+        width: 100%;
+        img{
+            @include img-full;
+
+        }
+    }
+    .business-text{
+        font-size: 1.5rem;
+        line-height: 2;
+        padding: 3rem;
+    }
+    @media (max-width: 768px) {
+        .business-text{
+            font-size: 1.2rem;
+            line-height: 1.4;
+            padding: 1rem;
+        }
+    }
+
+}
+.maker-list{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        li{
+            padding: 0.5rem;
+        }
+    }
+    h2{
+        font-size: 2rem;
+        padding-bottom: 2rem;  
+    }
+    h3{
+        font-size: 1.3rem;
+        padding: 1.5rem 1rem;
+    }
+    .txt>h3{
+        font-size: 1.1rem;
+        padding-bottom: 0rem;
+    }
+
+}

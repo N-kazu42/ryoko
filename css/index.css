@@ -185,6 +185,22 @@ header {
   line-height: 2rem;
 }
 
+.fadeIn_item.offs,
+.offs .fadeIn_item {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.fadeIn_item.ons,
+.ons .fadeIn_item {
+  -webkit-transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+  transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .work-title {
   font-size: 2rem;
   text-align: center;

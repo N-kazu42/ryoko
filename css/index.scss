@@ -154,6 +154,21 @@ header{
     line-height: 2rem;
   }
 }
+.fadeIn_item{
+  &.offs,
+  .offs &{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  &.ons,
+  .ons &{
+    transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .work-title{
     font-size: 2rem;
     text-align: center;

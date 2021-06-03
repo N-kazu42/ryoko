@@ -44,11 +44,13 @@
   & > div {
     padding: 2rem;
     margin: 2rem;
+    text-align: center;
     a {
       color: #fff;
       font-weight: 400;
     }
   }
+
 }
 
 
@@ -123,6 +125,7 @@
       right:3%;
     }
     &-text {
+      width: auto;
       font-size: 0.8rem;
       line-height: 1.4;
       margin-top: -2%;

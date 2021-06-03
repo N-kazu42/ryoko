@@ -3276,4 +3276,121 @@ footer .copyright {
     margin-top: -2%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+#company-img {
+  background: url(../images/slide-image3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.greeting-title, .company-title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.greeting-title h2, .company-title h2 {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid #0f4086;
+}
+
+.greeting-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.greeting-body .greeting-text {
+  padding: 0 2rem;
+  line-height: 1.5;
+}
+
+.greeting-body .greeting-text__img {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .greeting-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .greeting-body .greeting-text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-bottom: 2rem;
+  }
+  .greeting-title h2, .company-title h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.company {
+  padding-bottom: 3rem;
+}
+
+.company-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-body .title {
+  font-size: 1rem;
+  background-color: #0f4086;
+  opacity: 0.9;
+  color: #fff;
+  width: 20%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.company-body .date {
+  width: 50px;
+}
+
+.company-body td {
+  padding: 0 1rem;
+  border-bottom: solid 1px #fff;
+}
+
+.company-body table {
+  table-layout: fixed;
+  width: 50%;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .company-body {
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .company-body .date {
+    width: 30%;
+  }
+  .company-body table {
+    margin-bottom: 3rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 782px) {
+  .company-body {
+    font-size: 0.8rem;
+  }
+  .company-body .title {
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=company.css.map */

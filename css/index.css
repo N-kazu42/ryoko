@@ -529,7 +529,7 @@ header {
 .recruit-text h2 {
   position: absolute;
   left: 15%;
-  top: 35%;
+  top: 45%;
   font-size: 2rem;
   color: #fff;
   z-index: 5;
@@ -599,6 +599,17 @@ footer .copyright {
 @media screen and (max-width: 992px) {
   footer {
     height: 35vh;
+  }
+  footer .footer-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 20vh;
   }
   footer .footer-list {
     -ms-flex-wrap: wrap;

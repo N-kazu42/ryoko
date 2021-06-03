@@ -61,9 +61,7 @@
     text-align: center;
     padding: 0.5rem;
   }
-  .date{
-    width:50px;
-  }
+  
   td{
     padding: 0 1rem;
     border-bottom:solid 1px #fff;
@@ -75,6 +73,10 @@
     line-height: 1.5;
   }
 }
+.date{
+  width: 20%;
+}
+
 @media (max-width: 992px) {
   .company-body{
     font-size: 1rem;

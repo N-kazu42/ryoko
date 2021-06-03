@@ -245,6 +245,27 @@ section {
     flex-direction: column;
   }
 }
+.category-title {
+   padding: 3rem;
+  text-align: center;
+  h2{
+  display:inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: solid $main-color;
+  
+  }
+}
+@media (max-width: 768px) {
+  .category-title {
+   
+    h2{
+    
+    font-size: 1.4rem;
+    
+    }
+  }
+}
 
 // 共通部分終わり
 header{

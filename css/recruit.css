@@ -1581,6 +1581,7 @@ footer .copyright {
 .recruitment > div {
   padding: 2rem;
   margin: 2rem;
+  text-align: center;
 }
 
 .recruitment > div a {
@@ -1691,6 +1692,7 @@ footer .copyright {
     right: 3%;
   }
   .interview-text {
+    width: auto;
     font-size: 0.8rem;
     line-height: 1.4;
     margin-top: -2%;

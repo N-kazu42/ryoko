@@ -154,7 +154,7 @@ transition: transform .3s;
       }
       .header-nav .nav-item{
         margin-right: 0;
-        margin-bottom: 40px;
+        
       }
   
   /* ------------------ */
@@ -202,9 +202,11 @@ body.noscroll{
 }
 section {
   padding-top: 2.5rem;
+  
 }
+
 .container {
-  width: 100%;
+  // width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -233,6 +235,7 @@ section {
     max-width: 1140px;
   }
 }
+
 .col2{
   display: flex;
   justify-content: center;
@@ -248,7 +251,7 @@ header{
   position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
 
 }
 .menu {
@@ -320,8 +323,10 @@ header{
     &-list {
       flex-direction: column;
       flex-basis: 100%;
+      padding: 0;
       .news-data {
         padding-bottom: 0;
+        margin: 0;
       }
       .news-item {
         margin: 2rem;
@@ -438,6 +443,7 @@ header{
     h2 {
       position: absolute;
       left: 15%;
+      top: 35%;
       font-size: 2rem;
       color: #fff;
       z-index: 5;
@@ -473,8 +479,9 @@ footer{
     .footer-list{
         display: flex;
         justify-content: center;
+        padding: 1rem 0.5rem 0rem 0.5rem;
         li{
-            padding: 1rem;
+          padding: 0.5rem;
             a{
                 color: #fff;
             }
@@ -489,7 +496,7 @@ footer{
 
 @media screen and (max-width:992px){
   footer{
-    height: 30vh;
+    height: 35vh;
     .footer-list{
         flex-wrap: wrap;
     }

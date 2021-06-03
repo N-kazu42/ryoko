@@ -285,7 +285,6 @@ li {
   }
   .header-nav .nav-item {
     margin-right: 0;
-    margin-bottom: 40px;
   }
   /* ------------------ */
   /* fv */
@@ -335,7 +334,6 @@ section {
 }
 
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -389,7 +387,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu {
@@ -486,9 +484,11 @@ header {
             flex-direction: column;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 0;
   }
   .news-list .news-data {
     padding-bottom: 0;
+    margin: 0;
   }
   .news-list .news-item {
     margin: 2rem;
@@ -631,6 +631,7 @@ header {
 .recruit-text h2 {
   position: absolute;
   left: 15%;
+  top: 35%;
   font-size: 2rem;
   color: #fff;
   z-index: 5;
@@ -681,10 +682,11 @@ footer .footer-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem 0.5rem 0rem 0.5rem;
 }
 
 footer .footer-list li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 footer .footer-list li a {
@@ -698,7 +700,7 @@ footer .copyright {
 
 @media screen and (max-width: 992px) {
   footer {
-    height: 30vh;
+    height: 35vh;
   }
   footer .footer-list {
     -ms-flex-wrap: wrap;
@@ -992,7 +994,6 @@ li {
   }
   .header-nav .nav-item {
     margin-right: 0;
-    margin-bottom: 40px;
   }
   /* ------------------ */
   /* fv */
@@ -1042,7 +1043,6 @@ section {
 }
 
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1096,7 +1096,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu {
@@ -1193,9 +1193,11 @@ header {
             flex-direction: column;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 0;
   }
   .news-list .news-data {
     padding-bottom: 0;
+    margin: 0;
   }
   .news-list .news-item {
     margin: 2rem;
@@ -1338,6 +1340,7 @@ header {
 .recruit-text h2 {
   position: absolute;
   left: 15%;
+  top: 35%;
   font-size: 2rem;
   color: #fff;
   z-index: 5;
@@ -1388,10 +1391,11 @@ footer .footer-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem 0.5rem 0rem 0.5rem;
 }
 
 footer .footer-list li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 footer .footer-list li a {
@@ -1405,7 +1409,7 @@ footer .copyright {
 
 @media screen and (max-width: 992px) {
   footer {
-    height: 30vh;
+    height: 35vh;
   }
   footer .footer-list {
     -ms-flex-wrap: wrap;
@@ -1439,8 +1443,19 @@ footer .copyright {
   text-shadow: 1px 2px 3px #e2e1e1;
 }
 
+.business .business-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .business .business-body {
-  padding: 2rem 0;
+  padding: 2rem;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 .business .business-title {
@@ -1468,12 +1483,21 @@ footer .copyright {
 }
 
 .business .business-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2;
   padding: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .business .business-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .business .business-body {
+    padding: 3rem 0;
+  }
   .business .business-text {
     font-size: 1.2rem;
     line-height: 1.4;
@@ -1587,7 +1611,9 @@ footer .copyright {
 }
 
 .interview-body {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1597,11 +1623,15 @@ footer .copyright {
   padding-bottom: 2rem;
 }
 
-.interview-body .even {
+.interview .left {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-  margin-left: 0rem;
+  left: 2%;
+}
+
+.interview .right {
+  right: 2%;
 }
 
 .interview-img {
@@ -1609,11 +1639,8 @@ footer .copyright {
       flex-basis: 40%;
   height: 50vh;
   width: 50vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 5;
-  margin-left: -2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .interview-img img {
@@ -1642,5 +1669,31 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 992px) {
+  .interview-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .interview .left {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    left: -3%;
+  }
+  .interview .right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    right: 3%;
+  }
+  .interview-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-top: -2%;
+  }
 }
 /*# sourceMappingURL=recruit.css.map */

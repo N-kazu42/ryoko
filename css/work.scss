@@ -24,8 +24,13 @@
 }
 
 .business{
+    .business-container{
+        display: flex;
+        justify-content: center;
+    }
     .business-body{
-        padding: 2rem 0;
+        padding: 2rem;
+        flex-basis: 40%;
     }
     .business-title{
         text-align: center;
@@ -45,17 +50,27 @@
 
         }
     }
+    
     .business-text{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 2;
         padding: 3rem;
     }
-    @media (max-width: 768px) {
+    
+    @media (max-width: 992px) {
+        .business-container{
+            flex-direction: column;            
+        }
+
+        .business-body{
+            padding: 3rem 0;
+        }
         .business-text{
             font-size: 1.2rem;
             line-height: 1.4;
             padding: 1rem;
         }
+        
     }
 
 }

@@ -183,7 +183,6 @@ li {
   }
   .header-nav .nav-item {
     margin-right: 0;
-    margin-bottom: 40px;
   }
   /* ------------------ */
   /* fv */
@@ -233,7 +232,6 @@ section {
 }
 
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -287,7 +285,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu {
@@ -384,9 +382,11 @@ header {
             flex-direction: column;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 0;
   }
   .news-list .news-data {
     padding-bottom: 0;
+    margin: 0;
   }
   .news-list .news-item {
     margin: 2rem;
@@ -529,6 +529,7 @@ header {
 .recruit-text h2 {
   position: absolute;
   left: 15%;
+  top: 35%;
   font-size: 2rem;
   color: #fff;
   z-index: 5;
@@ -579,10 +580,11 @@ footer .footer-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem 0.5rem 0rem 0.5rem;
 }
 
 footer .footer-list li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 footer .footer-list li a {
@@ -596,7 +598,7 @@ footer .copyright {
 
 @media screen and (max-width: 992px) {
   footer {
-    height: 30vh;
+    height: 35vh;
   }
   footer .footer-list {
     -ms-flex-wrap: wrap;

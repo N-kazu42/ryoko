@@ -90,10 +90,11 @@
 
     img {
       @include img-full;
+      border-radius: 0.5em;
     }
   }
   &-text {
-    
+    border-radius: 0.5em;
     height: 50vh;
     width: 40vh;
     flex-basis: 40%;
@@ -123,7 +124,7 @@
       right:3%;
     }
     &-text {
-      width: auto;
+      width: 80%;
       font-size: 0.8rem;
       line-height: 1.4;
       margin-top: -2%;

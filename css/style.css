@@ -572,6 +572,18 @@ header {
   border-bottom: solid #0f4086;
 }
 
+.work-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
 .work-wrap .work-contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,9 +594,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vh;
+  width: 25vh;
   height: 25vh;
-  margin: 1rem;
 }
 
 .work-wrap .work-text {
@@ -611,13 +622,6 @@ header {
 .work-wrap .work-bg4 {
   background: url("../images/img_business04.png") no-repeat;
   background-size: cover;
-}
-
-@media (max-width: 768px) {
-  .work-wrap .work-contents {
-    width: auto;
-    margin: 1rem 0;
-  }
 }
 
 .recruit {

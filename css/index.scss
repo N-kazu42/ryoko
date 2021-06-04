@@ -404,14 +404,17 @@ header{
   }
 }
 .work-wrap{
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
     .work-contents{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50vh;
+        width: 25vh;
         height: 25vh;
-        margin: 1rem;
+        
     }
     .work-text{
         font-size: 1.5rem;
@@ -437,13 +440,7 @@ header{
         background-size:cover; 
 
     }
-    @media (max-width: 768px) {
-      .work-contents{
-        
-        width: auto;
-        margin: 1rem 0;
-    }
-    }
+    
 }
 
 

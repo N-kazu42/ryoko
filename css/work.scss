@@ -23,55 +23,85 @@
 }
 
 .business{
-    .business-container{
-        display: flex;
-        justify-content: center;
-    }
+    margin-top: 3rem;
     .business-body{
         padding: 2rem;
-        flex-basis: 40%;
+      
     }
-    
-    .business-img{
-        height: 30vh;
-        width: 90%;
-        margin: 0 0 0 auto;
-       
-        img{
-            @include img-full;
-            border-radius: 0.5em;
+    .business-contants{
+        display: flex;
+    }
+    .block{
+        flex-basis: 80%;
+        margin: 3rem 0;
+        &.right{
+            order: 2;
         }
+    }
+    .business-img{
+        img{
+            border-radius: 50%;
+            height: 40vh;
+            width: 40vh;
+        }    
+          
     }
     
     .business-text{
         font-size: 1.2rem;
         line-height: 2;
-        width: 80%;
+        width: 100%;
         padding: 1rem;
         position: relative;
         z-index: 10;
-        margin-top: -10%;
+       
         background-color: rgb(253, 252, 252);
         border-radius: 0.5em;
         
     }
     
-    @media (max-width: 992px) {
-        .business-container{
-            flex-direction: column;            
-        }
-
+    
+}
+@media (max-width: 992px) {
+    .business{
+       
         .business-body{
-            padding: 3rem 0;
+            padding: 2rem;
+           
         }
-        .business-text{
-            font-size: 1rem;
-            line-height: 1.4;
-            padding: 1rem;
+        .business-contants{
+         flex-direction: column;
+         align-items: center;
+        }
+        .block{
+            flex-basis: 80%;
+            margin: 3rem 0;
+            order: 2;
+            margin-top: -5%;
+        }
+        .business-img{
+            
+            img{
+                border-radius: 50%;
+                height: 40vh;
+                width: 40vh;
+            }    
+              
         }
         
+        .business-text{
+            font-size: 1.2rem;
+            line-height: 2;
+            width: 100%;
+            padding: 1rem;
+            position: relative;
+            z-index: 10;
+           
+            background-color: rgb(253, 252, 252);
+            border-radius: 0.5em;
+            
+        }
     }
-
 }
 .maker-list{
     ul{

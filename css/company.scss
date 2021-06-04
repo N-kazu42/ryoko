@@ -23,6 +23,7 @@
     line-height: 1.5;
     &__img{
      text-align: right;
+     padding-top: 2rem;
     }
   }
 }
@@ -32,7 +33,7 @@
     align-items: center;
     .greeting-text{
       order: -1;
-      padding-bottom: 2rem;
+      padding-bottom: 3rem;
       }
     
   }

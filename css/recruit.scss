@@ -1,4 +1,9 @@
-
+$main-color: #0f4086;
+@mixin img-full {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 //上を最後に消す
 #recruit-img {
   background: url(../images/slide-image2.jpg) no-repeat center;

@@ -54,9 +54,11 @@
         padding: 1rem;
         position: relative;
         z-index: 10;
-       
         background-color: rgb(253, 252, 252);
         border-radius: 0.5em;
+        &.even{
+            margin-left: -3%;
+        }
         
     }
     

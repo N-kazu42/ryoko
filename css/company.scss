@@ -1,4 +1,4 @@
-
+$main-color: #0f4086;
 //上を最後に消す
 #company-img {
   background: url(../images/slide-image3.jpg) no-repeat center;
@@ -13,6 +13,7 @@
     font-size: 2rem;
     padding-bottom: 1rem;
     border-bottom: solid $main-color;
+    
 }
 }
 .greeting-body{

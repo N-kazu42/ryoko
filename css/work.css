@@ -67,6 +67,10 @@
   border-radius: 0.5em;
 }
 
+.business .business-text.even {
+  margin-left: -3%;
+}
+
 @media (max-width: 992px) {
   .business .business-body {
     padding: 2rem;

@@ -94,7 +94,7 @@
         .business-text{
             font-size: 1.2rem;
             line-height: 2;
-            width: 100%;
+            width: auto;
             padding: 1rem;
             position: relative;
             z-index: 10;
@@ -102,6 +102,15 @@
             background-color: rgb(253, 252, 252);
             border-radius: 0.5em;
             
+        }
+    }
+}
+@media (max-width: 582px) {
+    .business{
+               
+        .business-text{
+            font-size: 1rem;
+
         }
     }
 }

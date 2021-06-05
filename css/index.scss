@@ -300,6 +300,24 @@ header{
 #slider {
   width: 100%;
   height: 80vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-text{
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  h2{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    span{
+      font-size: 3rem;
+    }
+  }
 }
 
 .news {

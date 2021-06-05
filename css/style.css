@@ -775,7 +775,7 @@ footer .copyright {
 }
 
 #work-img {
-  background: url(../images/slide-image1.jpg) no-repeat center;
+  background: url(../images/work.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -797,7 +797,11 @@ footer .copyright {
 .main-img h1 {
   width: 80%;
   font-size: 2rem;
-  text-shadow: 1px 2px 3px #e2e1e1;
+}
+
+.main-img h1 span {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
 }
 
 .business {
@@ -1084,7 +1088,7 @@ footer .copyright {
 }
 
 #company-img {
-  background: url(../images/slide-image3.jpg) no-repeat center;
+  background: url(../images/company.jpg) no-repeat center;
   background-size: cover;
 }
 

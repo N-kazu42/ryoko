@@ -30,6 +30,34 @@ li {
     transform: translateY(0);
   }
 }
+.fadeIn_right_item{
+  &.offs,
+  .offs &{
+    opacity: 0;
+    transform: translatex(50px);
+  }
+
+  &.ons,
+  .ons &{
+    transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+}
+.fadeIn_left_item{
+  &.offs,
+  .offs &{
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+
+  &.ons,
+  .ons &{
+    transition: all 1s cubic-bezier(0, 0, 0.13, 0.79);
+    opacity: 1;
+    transform: translateX(50px);
+  }
+}
 // ハンバーガー
 .burger-btn{
   display: block;      

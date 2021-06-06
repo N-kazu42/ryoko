@@ -85,6 +85,20 @@ function scr_ani(scr,offs_max){
         fadeIn_item.eq(i).css('transition-delay', delay + 's');
       }
     }
+    var fadeIn_item = $('.fadeIn_right_item');
+    for (var i = 0; i < fadeIn_item.length; i++) {
+      let delay = fadeIn_item.eq(i).data('delay');
+      if(delay){
+        fadeIn_item.eq(i).css('transition-delay', delay + 's');
+      }
+    }
+    var fadeIn_item = $('.fadeIn_left_item');
+    for (var i = 0; i < fadeIn_item.length; i++) {
+      let delay = fadeIn_item.eq(i).data('delay');
+      if(delay){
+        fadeIn_item.eq(i).css('transition-delay', delay + 's');
+      }
+    }
   
     // （リロード時など）ロード時にすでにスクロールされている場合に対応
     var scr = $(window).scrollTop();

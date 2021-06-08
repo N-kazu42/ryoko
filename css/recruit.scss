@@ -58,7 +58,7 @@ $main-color: #0f4086;
 
 
 .interview-title {
-  width: 100%;
+  width: auto;
   height: 20vh;
   background-color: $main-color;
   opacity: 0.8;
@@ -129,10 +129,13 @@ $main-color: #0f4086;
       right:3%;
     }
     &-text {
-      width: 80%;
+      width: auto;
       font-size: 0.8rem;
       line-height: 1.4;
       margin-top: -2%;
+    }
+    &-img{
+      width: auto;
     }
     
   }

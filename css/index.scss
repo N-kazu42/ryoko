@@ -571,12 +571,13 @@ footer{
     .copyright{
         color: #fff;
         text-align: center;
+        padding-bottom: 1.5rem;
     }
 }
 
 @media screen and (max-width:992px){
   footer{
-    height: 35vh;
+    height: auto;
     .footer-list{
         flex-wrap: wrap;
         padding: 1rem;
@@ -586,7 +587,7 @@ footer{
 }
 @media screen and (max-width:768px){
   footer{
-    height: 20vh;
+    
     .footer-list{
         flex-wrap: wrap;
     }

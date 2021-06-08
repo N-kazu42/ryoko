@@ -799,11 +799,12 @@ footer .footer-list li a {
 footer .copyright {
   color: #fff;
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 992px) {
   footer {
-    height: 35vh;
+    height: auto;
   }
   footer .footer-list {
     -ms-flex-wrap: wrap;
@@ -813,9 +814,6 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
-    height: 20vh;
-  }
   footer .footer-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

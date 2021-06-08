@@ -699,6 +699,12 @@ header {
   background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .work-wrap .work-text {
+    font-size: 1.2rem;
+  }
+}
+
 .recruit {
   height: 30vh;
   width: 100%;

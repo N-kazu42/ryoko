@@ -496,7 +496,15 @@ header{
     }
     
 }
-
+@media screen and (max-width:768px){
+  .work-wrap{
+    .work-text{
+        font-size: 1.2rem;
+    }
+ 
+    
+}
+}
 
 .recruit {
   height: 30vh;

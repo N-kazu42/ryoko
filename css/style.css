@@ -846,6 +846,18 @@ footer .copyright {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 582px) {
+  .main-img {
+    height: 20vh;
+  }
+  .main-img h1 {
+    font-size: 1.3rem;
+  }
+  .main-img h1 span {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
 .business {
   margin-top: 3rem;
 }

@@ -512,6 +512,16 @@ header {
   font-size: 3rem;
 }
 
+.recruit-news {
+  background-color: #b5c3e1;
+}
+
+.recruit-news h3 {
+  padding: 1rem;
+  text-align: center;
+  font-weight: normal;
+}
+
 .news {
   color: #0f4086;
 }

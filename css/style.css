@@ -1769,11 +1769,20 @@ caption {
   line-height: 1.5;
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  height: 31vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .interview_post-body .interview_post-text p {
-  padding: 5rem;
+  width: 50%;
 }
 
 .interview_post-body .interview_post-img {

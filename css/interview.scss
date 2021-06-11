@@ -28,9 +28,12 @@ $main-color: #0f4086;
         line-height: 1.5;
         background-color: #fff;
         width: 100%;
-        height: 100%;
+        height: 31vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         p{
-            padding: 5rem;
+            width: 50%;
         }
     }
     .interview_post-img{

@@ -1,0 +1,153 @@
+
+//上を最後に消す
+
+
+// @include img-full;
+#work-img{
+    background: url(../images/work.jpg) no-repeat center;
+    background-size: cover;
+
+}
+.main-img{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    h1{
+        width: 80%;
+        font-size: 2rem;
+        
+        span{
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+
+        }
+    }
+}
+@media (max-width: 582px) {
+    .main-img{
+        height: 20vh;
+        h1{
+            font-size: 1.3rem;
+            span{
+               
+                padding: 0.5rem 0.5rem;
+    
+            }
+        }
+    }
+}
+.business{
+    margin-top: 3rem;
+    .business-body{
+        padding: 2rem;
+      
+    }
+    .business-contants{
+        display: flex;
+    }
+    .block{
+        flex-basis: 80%;
+        margin: 3rem 0;
+        &.right{
+            order: 2;
+        }
+    }
+    .business-img{
+        img{
+            border-radius: 50%;
+            height: 40vh;
+            width: 40vh;
+        }    
+          
+    }
+    
+    .business-text{
+        font-size: 1.2rem;
+        line-height: 2;
+        width: 100%;
+        padding: 1rem;
+        position: relative;
+        z-index: 10;
+        background-color: rgb(253, 252, 252);
+        border-radius: 0.5em;
+        &.even{
+            margin-left: -3%;
+        }
+        
+    }
+    
+    
+}
+@media (max-width: 992px) {
+    .business{
+       
+        .business-body{
+            padding: 2rem;
+           
+        }
+        .business-contants{
+         flex-direction: column;
+         align-items: center;
+        }
+        .block{
+            flex-basis: 80%;
+            margin: 3rem 0;
+            order: 2;
+            margin-top: -5%;
+        }
+        .business-img{
+            
+            img{
+                border-radius: 50%;
+                height: 40vh;
+                width: 40vh;
+            }    
+              
+        }
+        
+        .business-text{
+            font-size: 1.2rem;
+            line-height: 2;
+            width: auto;
+            padding: 1rem;
+            position: relative;
+            z-index: 10;
+           
+            background-color: rgb(253, 252, 252);
+            border-radius: 0.5em;
+            
+        }
+    }
+}
+@media (max-width: 582px) {
+    .business{
+               
+        .business-text{
+            font-size: 1rem;
+
+        }
+    }
+}
+.maker-list{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        li{
+            padding: 0.5rem;
+        }
+    }
+    
+    h3{
+        font-size: 1.3rem;
+        padding: 1.5rem 1rem;
+    }
+    .txt>h3{
+        font-size: 1.1rem;
+        padding-bottom: 0rem;
+    }
+
+}

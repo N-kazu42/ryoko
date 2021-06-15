@@ -19,6 +19,7 @@ $main-color: #0f4086;
 }
 .greeting-body{
   display: flex;
+  padding-bottom: 3rem;
 
   .greeting-text{
     padding: 0 2rem;
@@ -51,6 +52,7 @@ $main-color: #0f4086;
 }
 .company-body{
   display: flex;
+  padding-top: 2rem;
 
   .title{
     font-size: 1rem;
@@ -63,7 +65,7 @@ $main-color: #0f4086;
   }
   
   td{
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     border-bottom:solid 1px #fff;
   }
   table {

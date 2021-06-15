@@ -4,6 +4,44 @@ $main-color: #0f4086;
   width: 100%;
   object-fit: cover;
 }
+.main-img_interview{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .top-title{
+        display: inline-block;
+        background-color: #fff;
+        opacity: 0.9;
+        padding: 1rem;
+        margin-left: 10vw;
+        h1{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+        h3{
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+@media (max-width: 582px) {
+    .main-img_interview{
+        
+        .top-title{
+            
+            h1{
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+            }
+            h3{
+                font-size: 1rem;
+                padding-bottom: 0.5rem;
+                margin: 0;
+            }
+        }
+    }
+}
 #interview_post-img {
     background: url(../images/slide-image2-2.jpg) no-repeat center;
     background-size: cover;

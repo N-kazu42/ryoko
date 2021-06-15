@@ -838,11 +838,16 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-img h1 {
   width: 80%;
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main-img h1 span {
@@ -1732,6 +1737,47 @@ caption {
   .example-img {
     width: 100%;
     height: 40vw;
+  }
+}
+
+.main-img_interview {
+  height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-img_interview .top-title {
+  display: inline-block;
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 1rem;
+  margin-left: 10vw;
+}
+
+.main-img_interview .top-title h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.main-img_interview .top-title h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 582px) {
+  .main-img_interview .top-title h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .main-img_interview .top-title h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
   }
 }
 

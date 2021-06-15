@@ -624,6 +624,7 @@ header {
 
 @media (max-width: 768px) {
   .service-text {
+    padding-top: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -632,6 +633,9 @@ header {
   .service h2 {
     font-size: 1.2rem;
     line-height: 2rem;
+  }
+  .service-right {
+    height: 30vh;
   }
 }
 

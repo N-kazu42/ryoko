@@ -437,11 +437,15 @@ header{
 @media (max-width: 768px) {
   .service {
     &-text {
+      padding-top: 5rem;
       flex-direction: column;
     }
     h2 {
       font-size: 1.2rem;
       line-height: 2rem;
+    }
+    &-right {
+      height: 30vh;
     }
   }
 }

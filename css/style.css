@@ -824,6 +824,63 @@ footer .copyright {
   }
 }
 
+.appear {
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-animation: show 1s both;
+          animation: show 1s both;
+}
+
+p.appear:last-child {
+  margin: 0;
+}
+
+.dh {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.d1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.d1h {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.d2h {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 #work-img {
   background: url(../images/work.jpg) no-repeat center;
   background-size: cover;

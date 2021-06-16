@@ -598,3 +598,30 @@ footer{
 
   }
 }
+
+.appear {
+  transform-origin: center top;
+  animation: show 1s both;
+}
+
+
+
+p.appear:last-child {
+  margin: 0;
+}
+
+.dh { animation-delay: .5s; }
+.d1 { animation-delay: 1s; }
+.d1h { animation-delay: 1.5s; }
+.d2h { animation-delay: 2s; }
+
+@keyframes show {
+  0% {
+    transform: translate(0,50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}

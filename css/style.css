@@ -102,7 +102,7 @@ input, select {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -199,25 +199,25 @@ li {
 .burger-btn.close .bar_top {
   -webkit-transform: translate(-50%, 10px) rotate(45deg);
           transform: translate(-50%, 10px) rotate(45deg);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger-btn.close .bar_mid {
   opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .burger-btn.close .bar_bottom {
   -webkit-transform: translate(-50%, -8px) rotate(-45deg);
           transform: translate(-50%, -8px) rotate(-45deg);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger-btn {
@@ -272,23 +272,23 @@ li {
   .burger-btn.close .bar_top {
     -webkit-transform: translate(-50%, 10px) rotate(45deg);
             transform: translate(-50%, 10px) rotate(45deg);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
   }
   .burger-btn.close .bar_mid {
     opacity: 0;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
   .burger-btn.close .bar_bottom {
     -webkit-transform: translate(-50%, -8px) rotate(-45deg);
             transform: translate(-50%, -8px) rotate(-45deg);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
   }
   .nav-wrapper {
     display: none;
@@ -477,15 +477,6 @@ header {
   width: 100%;
   height: 80vh;
   /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .slider-text {
@@ -500,16 +491,37 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Noto Serif JP;
 }
 
 .slider-text h2 {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
 .slider-text h2 span {
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  #slider {
+    height: 70vh;
+    /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+  }
+  .slider-text {
+    height: 70vh;
+  }
+  .slider-text h2 {
+    font-size: 1.8rem;
+  }
+  .slider-text h2 span {
+    font-size: 2.8rem;
+  }
 }
 
 .recruit-news {
@@ -520,6 +532,13 @@ header {
   padding: 1rem;
   text-align: center;
   font-weight: normal;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .recruit-news h3 {
+    font-size: 0.8rem;
+  }
 }
 
 .news {
@@ -836,18 +855,20 @@ p.appear:last-child {
 }
 
 .dh {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .d1 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+  margin-left: 2.5rem;
 }
 
 .d1h {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  margin-left: 4rem;
 }
 
 .d2h {

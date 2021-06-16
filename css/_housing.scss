@@ -113,3 +113,41 @@ $main-color: #0f4086;
         
     }
 }
+.loopSlide {
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+  
+    img {
+        width: auto;
+        height: 100%;
+  
+        &:first-child {
+            animation: slide1 60s -30s linear infinite;
+        }
+  
+        &:last-child {
+            animation: slide2 60s linear infinite;
+        }
+  
+    }
+  }
+  
+  @keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+  }
+  
+  @keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+  }

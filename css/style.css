@@ -1814,6 +1814,12 @@ caption {
           animation: slide2 60s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .loopSlide {
+    height: 35vw;
+  }
+}
+
 @-webkit-keyframes slide1 {
   0% {
     -webkit-transform: translateX(100%);

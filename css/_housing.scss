@@ -113,6 +113,8 @@ $main-color: #0f4086;
         
     }
 }
+
+
 .loopSlide {
     display: flex;
     width: 100%;
@@ -132,7 +134,12 @@ $main-color: #0f4086;
         }
   
     }
-  }
+}
+@media (max-width: 768px){
+    .loopSlide {
+        height: 35vw;
+    }
+}
   
   @keyframes slide1 {
   0% {

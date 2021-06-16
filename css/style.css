@@ -1260,6 +1260,74 @@ caption {
   }
 }
 
+.loopSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}
+
+.loopSlide img {
+  width: auto;
+  height: 100%;
+}
+
+.loopSlide img:first-child {
+  -webkit-animation: slide1 60s -30s linear infinite;
+          animation: slide1 60s -30s linear infinite;
+}
+
+.loopSlide img:last-child {
+  -webkit-animation: slide2 60s linear infinite;
+          animation: slide2 60s linear infinite;
+}
+
+@-webkit-keyframes slide1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slide1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slide2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
 #access-main-img {
   background: url(../images/slide-image1.jpg) no-repeat center;
   background-size: cover;
@@ -1667,49 +1735,17 @@ caption {
 
 @media (max-width: 992px) {
   .housing-about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
   .housing-about h2 {
     color: #fff;
     font-size: 1.5rem;
     width: 50%;
     margin: 0 auto;
-  }
-  .housing-about .text-right {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/ 2;
-  }
-}
-
-@media (max-width: 992px) {
-  .housing-about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .housing-about h2 {
-    color: #fff;
-    font-size: 1.1rem;
-    width: 50%;
-    margin: 0 auto;
+    text-align: center;
   }
   .housing-about .text-right {
     -ms-grid-row: 1;

@@ -106,3 +106,41 @@ caption{
     
   }
 }
+.loopSlide {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+      width: auto;
+      height: 100%;
+
+      &:first-child {
+          animation: slide1 60s -30s linear infinite;
+      }
+
+      &:last-child {
+          animation: slide2 60s linear infinite;
+      }
+
+  }
+}
+
+@keyframes slide1 {
+0% {
+  transform: translateX(100%);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+
+@keyframes slide2 {
+0% {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-200%);
+}
+}

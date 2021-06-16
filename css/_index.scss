@@ -491,7 +491,7 @@ header {
   .work-text {
     font-size: 1.5rem;
     color: #fff;
-    text-shadow: 1px 2px 3px #808080;
+    text-shadow: 2px 3px 4px #000000;
   }
   .work-bg1 {
     background: url("../images/img_business01.jpg") no-repeat;
@@ -513,7 +513,7 @@ header {
 @media screen and (max-width: 768px) {
   .work-wrap {
     .work-text {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 }

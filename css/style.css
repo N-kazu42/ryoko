@@ -699,7 +699,7 @@ header {
 .work-wrap .work-text {
   font-size: 1.5rem;
   color: #fff;
-  text-shadow: 1px 2px 3px #808080;
+  text-shadow: 2px 3px 4px #000000;
 }
 
 .work-wrap .work-bg1 {
@@ -724,7 +724,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .work-wrap .work-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -930,11 +930,8 @@ p.appear:last-child {
   width: 80%;
   font-size: 2rem;
   padding-bottom: 2rem;
-}
-
-.main-img h1 span {
-  background-color: #fff;
-  padding: 0.5rem 1rem;
+  color: #fff;
+  text-shadow: 2px 3px 4px #000000;
 }
 
 @media (max-width: 582px) {

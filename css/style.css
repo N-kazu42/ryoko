@@ -1200,14 +1200,17 @@ p.appear:last-child {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .interview-body.right {
+    top: 0px;
+  }
+  .interview-container {
+    padding: 3rem;
+  }
 }
 
 @media screen and (max-width: 568px) {
-  .interview-container {
-    padding: 5rem 0;
-  }
   .interview-wrap {
-    padding: 0rem;
+    padding: 0;
   }
 }
 
